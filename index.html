@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+    .nav-item:hover{
+        background-color: aquamarine;
+        color:bisque
+    }
+
+
+.navbar{
+border-radius:20px;
+
+}
+.containers{
+margin:4px;
+border:10px solid black;
+background-color: antiquewhite;
+}
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+  
+
+
+
+
+
+
+<body>
+  <body>
+    <div class="hey">
+      <nav class="navbar" style="background-color: #ebf2e8;">
+          <!-- Navbar content -->
+       
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">ICODE</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href=about.html>About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Topics
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Webd</a></li>
+                    <li><a class="dropdown-item" href="#">Dsa</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Randomstuff</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  Login
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">
+                  Signup
+                </button>
+            </form>
+            
+           
+  
+  
+  
+  <!-- loginModal -->
+  
+            
+      </div></div></nav>
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+             
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SignupModal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="signupModalLabel">Sign up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.7KXbdcsH9BKcYhKmd8hymAHaEu&amp;pid=Api&amp;P=0&amp;h=180" width="500px;" height="500px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ICODER</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                <button type="button" class="btn btn-primary">Technology</button>
+  <button type="button" class="btn btn-secondary">Webd</button>
+  <button type="button" class="btn btn-success">Tech-fun</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.teahub.io/photos/full/52-522398_3840x2160-computer-information-technology-wallpaper-information-technology-images.jpg" width="500px;" height="500px;" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>This is my blog</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                <button type="button" class="btn btn-primary">Technology</button>
+                <button type="button" class="btn btn-secondary">Webd</button>
+                <button type="button" class="btn btn-success">Tech-fun</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://wallpapercave.com/wp/wp1997569.jpg" class="d-block w-100" width="500px;" height="500px;">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Award Winning Blog</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                <button type="button" class="btn btn-primary">Technology</button>
+                <button type="button" class="btn btn-secondary">Webd</button>
+                <button type="button" class="btn btn-success">Tech-fun</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="container">
+          <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                    <h3 class="mb-0">Instagram</h3>
+                    <div class="mb-1 text-body-secondary">Nov 12</div>
+                    <p class="card-text mb-auto">Instagram is a photo and video sharing social networking service owned by Meta Platforms. It allows users to upload media that can be edited with filters, be organized by hashtags, and be associated with a location via geographical tagging..</p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://tse2.mm.bing.net/th?id=OIP.shMLwGIsbDrfGhWzmHp0mQHaF7&amp;pid=Api&amp;P=0&amp;h=180">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                    <h3 class="mb-0">Facebook</h3>
+                    <div class="mb-1 text-body-secondary">Nov 11</div>
+                    <p class="mb-auto">Facebook is a social media and social networking service owned by the American technology conglomerate Meta</p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://tse1.mm.bing.net/th?id=OIP.Ua5AXhtGRgPuisZVmetclQHaFL&amp;pid=Api&amp;P=0&amp;h=180">
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                    <h3 class="mb-0">Twitter</h3>
+                    <div class="mb-1 text-body-secondary">Nov 12</div>
+                    <p class="card-text mb-auto">Twitter was an American social networking service that was rebranded in 2023 as X. Founded in 2006, it was one of the world's largest social media websites and the fifth-most visited website in the world..</p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                    <h3 class="mb-0">Whatsapp</h3>
+                    <div class="mb-1 text-body-secondary">Nov 11</div>
+                    <p class="mb-auto">WhatsApp is an instant messaging and voice-over-IP service owned by technology conglomerate Meta. It allows users to send text, voice messages and video messages, make voice and video calls, and share images, documents, user locations, and other content. .</p>
+                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                    <img class="bd-placeholder-img" width="200" height="250" src="https://tse1.mm.bing.net/th?id=OIP.iSvLQcjr3_wYsQZA4kaBugHaEK&amp;pid=Api&amp;P=0&amp;h=180">
+                </div>
+              </div>
+            </div>
+            <div class="containers">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+                </div>
+            
+               
+              </footer>
+            </div>
+                </div>
+            
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                  <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+              
+            </div>
+  </div>
+  
+  
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+  </body>
+  </html>
+  
+ 
+
+  
+  
